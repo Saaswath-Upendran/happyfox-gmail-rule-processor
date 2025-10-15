@@ -1,0 +1,26 @@
+# Core Gmail + Auth
+google-api-python-client==2.149.0
+google-auth==2.35.0
+google-auth-oauthlib==1.2.1
+
+
+# Database
+SQLAlchemy==2.0.36
+psycopg2-binary==2.9.9 # For PostgreSQL
+
+
+# Utilities
+python-dotenv==1.0.1
+rich==13.9.4
+pytz==2024.2
+
+
+# Testing
+pytest==8.3.3
+pytest-mock==3.14.0
+freezegun==1.5.1
+factory_boy==3.3.0
+
+
+# Optional: better logging structure
+structlog==24.4.0

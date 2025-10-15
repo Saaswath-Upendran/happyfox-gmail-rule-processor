@@ -1,0 +1,22 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Node (if you keep the bonus UI in the repo)
+node_modules/
+dist/
+
+# OS/editor
+.DS_Store
+*.log
+
+./pytest_cache/
+
+cerdentials
+venv
+# Credentials & tokens
+token.json
+.env
+*.pem
+*.key

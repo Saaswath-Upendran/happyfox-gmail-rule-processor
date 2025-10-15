@@ -1,0 +1,53 @@
+{
+    "collection_predicate": "All",
+    "rules": [
+        {
+            "name": "Newsletters to read later",
+            "conditions": [
+                {
+                    "field": "From",
+                    "predicate": "Contains",
+                    "value": "newsletter@"
+                },
+                {
+                    "field": "Subject",
+                    "predicate": "Contains",
+                    "value": "Weekly"
+                }
+            ],
+            "actions": [
+                {
+                    "type": "Move",
+                    "label": "READ_LATER"
+                },
+                {
+                    "type": "MarkAsUnread"
+                }
+            ]
+        },
+        {
+            "name": "Old promotions cleanup",
+            "conditions": [
+                {
+                    "field": "ReceivedAt",
+                    "predicate": "LessThanDays",
+                    "value": 60
+                },
+                {
+                    "field": "Subject",
+                    "predicate": "Contains",
+                    "value": "SALE"
+                }
+            ],
+            "actions": [
+                {
+                    "type": "Move",
+                    "label": "PROMOTIONS"
+                },
+                {
+                    "type": "MarkAsRead"
+                }
+            ]
+        }
+    ]
+}

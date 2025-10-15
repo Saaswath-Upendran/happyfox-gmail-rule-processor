@@ -1,0 +1,28 @@
+{
+    "collection_predicate": "All",
+    "rules": [
+        {
+            "name": "Removal of Google one ",
+            "conditions": [
+                {
+                    "field": "From",
+                    "predicate": "Contains",
+                    "value": "google-noreply@"
+                },
+                {
+                    "field": "Subject",
+                    "predicate": "Contains",
+                    "value": "You’re out of Google Account storage"
+                }
+            ],
+            "actions": [
+                {
+                    "type": "Move",
+                    "label": "NEED_TO_REMOVE"
+                },
+                {
+                    "type": "MarkAsUnread"
+                }
+            ]
+        }]
+}
